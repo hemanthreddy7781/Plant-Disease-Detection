@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom - A Plant's Campanion</title>
+    <link rel="shortcut icon" type="x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- NAVIGATION BAR -->
+      <div class="header">
+        <div class="navbara">
+          <div class="sub-top-logo">
+            <a href="/"
+              ><img src="Images/logo.webp" alt="Bloom logo" /> Bloom</a
+            >
+          </div>
+        </div>
+        <div class="navbarb">
+          <ul>
+            <li>Plant-ID</li>
+            <li>Disease-ID</li>
+            <li><a href="loginpage.html">Log-in</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Top Page -->
+      <div class="hero">
+        <div class="image1">
+          <img src="Images/photo.png" alt="" />
+        </div>
+        <div class="heading1">
+          <p>
+            Identify and cure <span class="span"> plant diseases</span> with
+            Bloom
+          </p>
+          <p>
+            Wanna Treat your Plant???<br />
+            Try the Bloom app to identify the <br />cause and get identity of
+            disease and care <br />info in a snap.
+          </p>
+          <button
+            class="Identify"
+            onclick="window.location.href='loginpage.html'"
+          >
+            Identify Now
+          </button>
+        </div>
+      </div>
+      <!-- Assistance in Pocket -->
+      <div class="assistancesection">
+        <div class="assistance">
+          <p class="heading2">
+            <span class="auto-type"></span>in your pocket from now
+          </p>
+          <p class="subject2">
+            Transform your phone into a plant health expert! Snap a photo, and
+            our Deep Learning-powered tool instantly diagnoses plant diseases,
+            estimates severity, and provides personalized care solutions.
+            Keeping your plants happy and healthy has never been this
+            effortless!
+          </p>
+          <div class="grid-container">
+            <!-- Start Diagnosing Card -->
+            <div class="card first">
+              <div class="icon">
+                <img
+                  src="Images/startdia.png"
+                  alt="Magnifying Glass Icon"
+                  id="normal-icon"
+                />
+                <p class="text">Start diagnosing</p>
+              </div>
+            </div>
+            <!-- Image Cards -->
+            <div class="card normal">
+              <img
+                src="LeafScortch.JPG"
+                alt="Normal Display"
+                class="default-image"
+              />
+              <div class="hover-overlay">
+                <img
+                  src="Images/diseasehover.png"
+                  alt="Hover Display"
+                  class="hover-image"
+                />
+                <span class="hover-text">Strawberry Scortch</span>
+              </div>
+            </div>
+
+            <div class="card normal">
+              <img
+                src="PepperBacteria.JPG"
+                alt="Normal Display"
+                class="default-image"
+              />
+              <div class="hover-overlay">
+                <img
+                  src="Images/diseasehover.png"
+                  alt="Hover Display"
+                  class="hover-image"
+                />
+                <span class="hover-text">Pepper Bacteria</span>
+              </div>
+            </div>
+
+            <div class="card normal">
+              <img
+                src="PotatoLateBlight.JPG"
+                alt="Normal Display"
+                class="default-image"
+              />
+              <div class="hover-overlay">
+                <img
+                  src="Images/diseasehover.png"
+                  alt="Hover Display"
+                  class="hover-image"
+                />
+                <span class="hover-text">Potato LateBlight</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- How to Use and Faq -->
+      <div class="useandfaq">
+        <!-- How to Use -->
+        <div class="how-to-use">
+          <div class="img">
+            <img class="howtouse1" src="Images/How to Use.webp" alt="" />
+            <img class="howtouse2" src="Images/How to Use2.webp" alt="" />
+          </div>
+          <div class="process">
+            <p>How to Identify disease with <span>Bloom</span></p>
+            <ol>
+              <li class="l1">
+                <div class="circle-icon">1</div>
+                Open Bloom Application and Tap on Camera button in Disease-Id
+              </li>
+              <li class="l1">
+                <div class="circle-icon">2</div>
+                Place your effected or sick Plant leaf under the camera frame.
+              </li>
+              <li class="l1">
+                <div class="circle-icon">3</div>
+                Snap the different photos of the leafs on the diseased or
+                suspicious Plant
+              </li>
+              <li class="l2">
+                <div class="circle-icon">4</div>
+                That's it!!! You will get the output (Disease and cure of it )
+                on the screen
+              </li>
+              <li class="l2">
+                <div class="circle-icon">5</div>
+                Download the pdf and cure the plant
+              </li>
+            </ol>
+            <button
+              class="Identify"
+              onclick="window.location.href='loginpage.html'"
+            >
+              Identify Now
+            </button>
+          </div>
+        </div>
+        <!-- FAQ -->
+        <div class="container">
+          <h1 class="title">Frequently Asked Questions</h1>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="accordion-title"
+                  >How does Bloom identify plant diseases?</span
+                >
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Bloom uses a CNN model to recognize the disease your plant
+                  has. Our database contains 38 classes of diseases, such as
+                  Leaf Scortch, LateBlight, Bacterial and many more...
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="accordion-title"
+                  >Will more plant species or diseases be added?</span
+                >
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Yes, the application can be updated with additional plant
+                  species and diseases as new datasets become available.Feel
+                  free to contact us through sources provided in this page if
+                  any new disease other than the dataset are found or available
+                  so that in further updates it will be added to the application
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="accordion-title"
+                  >Is the application free to use?</span
+                >
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Yes,This application is offered as a free service to empower
+                  farmers, researchers, and plant enthusiasts. We aim to ensure
+                  a seamless user experience, enabling accurate disease
+                  detection and severity estimation without financial barriers.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="accordion-title"
+                  >Does the application provide treatment suggestions?</span
+                >
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Currently, the application focuses on disease detection and
+                  severity estimation. While treatment advice is not included at
+                  the moment, we are actively working on developing a treatment
+                  suggestion system and aim to launch it in future updates once
+                  it’s accurate and successful.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footercontent">
+        <p><span>Stop Killing</span>,Start Growing - Plant a Better Future!</p>
+        <button
+          class="Identify"
+          onclick="window.location.href='loginpage.html'"
+        >
+          Try Bloom
+        </button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/script.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

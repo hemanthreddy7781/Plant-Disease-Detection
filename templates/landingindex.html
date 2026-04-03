@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/landing.css" />
+    <link rel="stylesheet" href="/mainpage.css" />
+    <!-- GSAP -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <!-- Three.js and related scripts -->
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.132.2/build/three.module.js",
+          "three/examples/jsm/controls/TrackballControls": "https://unpkg.com/three@0.132.2/examples/jsm/controls/TrackballControls.js",
+          "three/examples/jsm/loaders/OBJLoader": "https://unpkg.com/three@0.132.2/examples/jsm/loaders/OBJLoader.js",
+          "three/examples/jsm/math/MeshSurfaceSampler": "https://unpkg.com/three@0.132.2/examples/jsm/math/MeshSurfaceSampler.js"
+        }
+      }
+    </script>
+    <script type="module" src="/landingmain.js"></script>
+    <title>Bloom Landing</title>
+  </head>
+  <body>
+    <!-- Main Content (Always Visible) -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <div class="header">
+        <div class="navbara">
+          <div class="sub-top-logo">
+            <a href="/"
+              ><img src="Images/logo.webp" alt="Bloom logo" /> Bloom</a
+            >
+          </div>
+        </div>
+        <div class="navbarb">
+          <ul>
+            <li>Plant-ID</li>
+            <li>Disease-ID</li>
+            <li id="profile">Profile</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <div class="hero">
+        <div class="heading1">
+          <p>
+            <span>At Bloom</span>, we're not just cultivating plants, we're
+            cultivating a movement toward a greener, healthier planet. Join us
+            in making a lasting impact and spreading the beauty of nature far
+            and wide.
+          </p>
+          <div class="rightside"></div>
+          <p>The future is green. Let it <span>bloom</span> with us.</p>
+          <button class="Identify">Identify Now</button>
+        </div>
+      </div>
+
+      <!-- Insights and characteristics -->
+      <section id="insights" class="insights-section">
+        <div class="container">
+          <!-- Insights and Statistics -->
+          <h2 style="font-size: 2rem; color: #2c6455">Insights & Statistics</h2>
+          <p style="font-size: 1.5rem">
+            Discover how Bloom is making a difference in the field of
+            agriculture.
+          </p>
+
+          <div class="stats">
+            <div class="stat-item">
+              <h3 style="font-size: 5rem">38+</h3>
+              <p style="font-size: 1.5rem">Diseases Identified</p>
+            </div>
+            <div class="stat-item">
+              <h3 style="font-size: 5rem">82%</h3>
+              <p style="font-size: 1.5rem">Detection Accuracy</p>
+            </div>
+          </div>
+
+          <!-- Supported Plants -->
+          <section id="supported-plants" class="plants-section">
+            <div class="container">
+              <h2 style="color: #2c6455">Supported Plants</h2>
+              <p>
+                Bloom can detect diseases for a variety of crops and plants.
+              </p>
+
+              <div class="plants-gallery">
+                <div class="marquee-container">
+                  <!-- First row -->
+                  <div class="marquee-content">
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Apple</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Apple Scab</li>
+                        <li>Black Rot</li>
+                        <li>Cedar Apple Rust</li>
+                      </ul>
+                    </div>
+
+                    <!-- Duplicate this plant-item several times -->
+                  </div>
+
+                  <!-- Second row (reverse direction) -->
+                  <div class="marquee-content-reverse">
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+                    <div class="plant-item">
+                      <div class="plant-header">
+                        <div class="plant-icon"></div>
+                        <h3 class="plant-name">Tomato</h3>
+                      </div>
+                      <ul class="plant-diseases">
+                        <li>Early Blight</li>
+                        <li>Late Blight</li>
+                        <li>Leaf Mold</li>
+                      </ul>
+                    </div>
+
+                    <!-- Duplicate this plant-item several times -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- User Reviews -->
+          <div class="users-say-title" style="font-size: 40px">
+            Our users say
+          </div>
+          <div class="userreview">
+            <div class="review-card">
+              <div class="star-rating">★★★★★</div>
+              <div class="review-text">
+                Bloom is the best plant app I've ever used. It's plant
+                diagnostics are great and almost always spot on. I love the care
+                routines and the interesting articles
+              </div>
+              <div class="review-author">Bahubali</div>
+            </div>
+
+            <div class="review-card">
+              <div class="star-rating">★★★★★</div>
+              <div class="review-text">
+                Bloom is an absolute game-changer! It accurately detected black
+                rot in my orchard, and the recommended steps helped me save my
+                crops. The app is so easy to use—I highly recommend it! Bloom is
+                Unpredictable.!!!
+              </div>
+              <div class="review-author">Ram Nandhan</div>
+            </div>
+
+            <div class="review-card">
+              <div class="star-rating">★★★★</div>
+              <div class="review-text">
+                Bloom bridges the gap between technology and traditional farming
+                practices. It empowers farmers with accurate diagnostics and
+                actionable insights, paving the way for sustainable agriculture.
+                There's hope for me ..!!!!
+              </div>
+              <div class="review-author">Salaar Devaratha Raisaar</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Patnership and Contact us -->
+      <section id="partnerships" class="partnerships-section">
+        <div class="container">
+          <h2 style="color: #2c6455">Partnership Opportunities</h2>
+          <p>
+            We are looking to collaborate with agricultural research
+            organizations, NGOs, and government bodies to advance sustainable
+            farming practices. Join us in making a difference in the world of
+            agriculture.
+          </p>
+
+          <section class="partnership-benefits">
+            <div class="container">
+              <h2>Why Partner with Us?</h2>
+              <div class="benefits-list">
+                <div class="benefit-item">
+                  <div class="icon">✔</div>
+                  <p>
+                    Access cutting-edge technology for plant disease detection.
+                  </p>
+                </div>
+                <div class="benefit-item">
+                  <div class="icon">✔</div>
+                  <p>Collaborate on research to improve farming outcomes.</p>
+                </div>
+                <div class="benefit-item">
+                  <div class="icon">✔</div>
+                  <p>
+                    Contribute to sustainable agricultural practices worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form id="partnershipForm">
+              <div class="form-group">
+                <label for="orgName">Organization Name</label>
+                <input
+                  type="text"
+                  id="orgName"
+                  name="orgName"
+                  placeholder="Enter your organization name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactName">Contact Person</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="contactName"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us how you'd like to collaborate"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footercontent">
+          <p>
+            Roses are <span style="color: red">Red</span>,Violets are
+            <span style="color: blue">Blue</span> ....
+          </p>
+          <p style="color: #63b68e; font-weight: 500">
+            Identify the <span>Plant diseases</span> of Plants around you
+          </p>
+          <button
+            class="Identify"
+            onclick="window.location.href='recognition.html'"
+          >
+            Try for Free
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page Overlay -->
+    <div class="landing-wrapper">
+      <div class="landing-content">
+        <div class="landing-image-container">
+          <img
+            src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp"
+            alt="landing image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

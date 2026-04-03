@@ -1,0 +1,404 @@
+/** Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*. Styling Starts Here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header {
+  animation: fadeInUp 0.8s ease-out;
+  margin-bottom: 50px;
+}
+
+.header .head-img img {
+  width: 138vw;
+  margin-left: -400px;
+  margin-bottom: -200px;
+}
+.sub-top-logo {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  left: 50px;
+}
+.sub-top-logo a {
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  color: #2c6455;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.sub-top-logo img {
+  width: 40px;
+  padding-right: 8px;
+}
+
+.main {
+  width: 55vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  /* background-color: red    ; */
+}
+
+.side-headings {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.side-headings img {
+  width: 55%;
+}
+
+.side-headings :nth-child(2) {
+  color: rgb(99, 182, 142);
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.side-headings :nth-child(3) {
+  color: rgb(113, 128, 150);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.login {
+  width: 45%;
+}
+
+.login .loginside .signupside {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
+  margin: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.signupside {
+  height: 55%;
+}
+
+.login .card {
+  width: 100%;
+  height: 540px; /* Base height */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
+  margin: 20px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s, height 0.5s;
+}
+
+.loginside,
+.signupside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: white;
+  border-radius: 13px;
+}
+
+.signupside {
+  transform: rotateY(180deg);
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  height: 620px; /* Increased height for signup side */
+}
+
+.createnew {
+  margin-top: 30px;
+}
+
+.createnew a,
+.backtologin a {
+  color: rgb(99, 182, 142);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 59.5%;
+}
+
+.heading p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+  color: rgb(44, 100, 85);
+}
+
+.loginform {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loginform input {
+  padding: 16px;
+  width: 90%;
+  margin: 0 5% 15px 5%;
+  border-radius: 8px;
+  border: 2px solid rgb(211, 204, 204);
+  box-sizing: border-box;
+}
+
+.loginform p {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(113, 128, 150);
+  padding-top: 8px;
+  padding-left: 55px;
+}
+
+/* #7ADFAF */
+
+.loginside button,
+.signupside button {
+  background-color: #7adfaf;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  width: 85%;
+  padding: 22px;
+  border: 2px solid;
+  border-radius: 32px;
+  margin-top: 10px;
+  margin-left: 8%;
+}
+
+.signupside .sigupbtn {
+  margin-bottom: 18px;
+}
+
+.loginside > p {
+  color: rgb(99, 182, 142);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+
+.or {
+  text-align: center;
+  position: relative;
+}
+
+.otheroptions {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.google {
+  width: 45%;
+  display: flex;
+  border: 1px solid rgb(231, 227, 227);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  margin-right: 5%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.facebook {
+  width: 45%;
+  display: flex;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.google,
+.facebook p {
+  font-size: 16px;
+}
+
+svg {
+  width: 10%;
+  margin-right: 3%;
+}
+
+footer .image img {
+  width: 100vw;
+}
+
+.fpwd:hover {
+  text-decoration-line: underline;
+  color: rgb(158, 36, 36);
+  cursor: pointer;
+}
+
+.password-container {
+  position: relative;
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.eye-closed {
+  display: none;
+}
+
+.password-container.show-password .eye-open {
+  display: none;
+}
+
+.password-container.show-password .eye-closed {
+  display: block;
+}
+
+/* Adjust input padding to accommodate the icon */
+.password-container input {
+  width: 100%;
+  padding: 16px;
+  padding-right: 40px !important;
+  margin: 0;
+  border-radius: 8px;
+  border: 2px solid rgb(211, 204, 204);
+  box-sizing: border-box;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    width: 80vw;
+  }
+
+  .header .head-img img {
+    width: 150vw;
+    margin-left: -200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-headings {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .side-headings img {
+    width: 40%;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .login .card {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .createnew a,
+  .backtologin a {
+    margin-left: 50%;
+  }
+
+  .header .head-img img {
+    width: 200vw;
+    margin-left: -150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .header .head-img img {
+    width: 250vw;
+    margin-left: -100px;
+  }
+
+  .sub-top-logo {
+    left: 20px;
+    right: 20px;
+  }
+
+  .sub-top-logo a {
+    font-size: 28px;
+  }
+
+  .side-headings img {
+    width: 60%;
+  }
+
+  .side-headings :nth-child(2) {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .side-headings :nth-child(3) {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .login .card {
+    margin: 10px;
+  }
+
+  .otheroptions {
+    width: 90%;
+  }
+
+  .google p,
+  .facebook p {
+    font-size: 14px;
+  }
+}
